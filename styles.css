@@ -70,10 +70,28 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-bottom: 20px;
 }
 
 .prompt {
-    color: #00ff00;
+    display: inline-flex;
+    align-items: center;
+}
+
+.prompt-user {
+    color: rgb(255, 157, 0); /* Yellow */
+}
+
+.prompt-at {
+    color: #ffffff; /* White */
+}
+
+.prompt-host {
+    color: #00ff9d; /* Teal green */
+}
+
+.prompt-path {
+    color: #ffffff; /* White */
 }
 
 .text {
@@ -86,6 +104,29 @@ body {
     background-color: #ffffff;
     display: inline-block;
     animation: blink 1s step-end infinite;
+}
+
+.terminal-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.terminal-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.terminal-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 @keyframes blink {
